@@ -1,16 +1,38 @@
+Here is the full code:
+
+HTML
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <div class="initial-view">
+            <input type="text" id="player-1" placeholder="Player 1 Name">
+            <input type="text" id="player-2" placeholder="Player 2 Name">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="game-view" style="display: none;">
+            <h1>Tic Tac Toe</h1>
+            <div class="message"></div>
+            <div class="board">
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+                <div class="cell" id="9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
